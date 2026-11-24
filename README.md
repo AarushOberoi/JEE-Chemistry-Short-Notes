@@ -1,57 +1,78 @@
-# 🐉 Throne of Ranks
+# ⚗️ JEE Chemistry Short Notes
 
-**A 3D countdown journey to JEE Main.** Travel through the realms of Physics, Chemistry and Mathematics, level up your rank every few days, and face the final boss on exam day.
+Chapter-wise **JEE Main Chemistry short notes** with JEE Main PYQ (previous year question) focus points, covering Class 11, Class 12 and extra JEE Main topics.
 
-🔗 **Enter the realm:** https://throneofranks.aarushoberoi.workers.dev
-
-> *"Dragons are not born fearless. They are born stubborn."*
+🔗 **Read online:** https://jeechemistryshortnotes.aarushoberoi.workers.dev
 
 ---
 
-## 🎯 What Is This?
-
-Throne of Ranks turns exam preparation into a game. Instead of a plain countdown, you follow an 81-day journey from 1 November to the day before **JEE Main (20 January 2027, 9:00 AM)**. Each day you complete a quest, keep your streak alive and climb the ranks toward the throne.
-
 ## ✨ Features
 
-- **Live countdown** to JEE Main in days, hours, minutes and seconds, plus the Session 1 window dates
-- **3D Journey map**: scroll or drag through every day of the journey, with each stretch set in its own themed realm
-- **Six ranks to climb:** Recruit → Squire → Sworn Sword → Knight → Lord Commander → Sovereign, with a "time until you evolve" indicator
-- **Hero stats:** Power, Focus and Courage
-- **Daily Decree**: one quest per day (for example, revise a chapter, then do timed MCQs)
-- **Seal the quest** to complete the day and add to your streak 🔥
-- **Streak tracking** with current streak, best streak and total days done
-- **Day planner**: tap any day on the Journey to add goals for it
-- **Journey progress** showing the day number out of 81 and the percentage completed
-- **Boss at the end:** *Pyraxis, The Three-Headed Dread*, guarding the Final Siege on exam day
-- **Day/night toggle**
-- **Responsive layout**, safe-area aware on phones
-- **No sign-up and no backend:** open it and play
+- **Chapter-wise notes** across Physical, Organic and Inorganic Chemistry (24 sections)
+- **JEE Main PYQ focus points** in each chapter
+- **Weightage tags** on every chapter: Medium, High or Very high, so you know where to spend your time
+- **Quick-revision sections** for named reactions, reactions and inorganic trends
+- **Revision tracker** (*Revised X / 24 chapters*) to mark chapters as done
+- **Light and dark theme** toggle
+- **Single-page app** with hash-based routing (e.g. `/#/c/11-6`), so every chapter has its own shareable link
+- **Mobile-friendly** with a collapsible chapter menu
+- **No sign-up, no backend**, just open and revise
 
-## 🗺️ The Realms
+## 📚 Chapters
 
-| Realm | Name |
-| ----- | ---- |
-| I | The Vale of Vectors |
-| II | Kinematic Kingswood |
-| III | The Mole Marches |
-| IV | Calculus Crags |
-| V | The Organic Wildwood |
-| VI | Ashfall Keep |
+### Class 11
 
-Every realm is built around Physics (P), Chemistry (C) and Mathematics (M).
+| # | Chapter | JEE Main weightage |
+| - | ------- | ------------------ |
+| 1 | Some Basic Concepts of Chemistry | High |
+| 2 | Structure of Atom | High |
+| 3 | Classification of Elements and Periodicity in Properties | Medium |
+| 4 | Chemical Bonding and Molecular Structure | High |
+| 5 | Thermodynamics | High |
+| 6 | Equilibrium | Very high |
+| 7 | Redox Reactions | Medium |
+| 8 | Organic Chemistry: Some Basic Principles and Techniques | Very high |
+| 9 | Hydrocarbons | Very high |
+
+### Class 12
+
+| # | Chapter | JEE Main weightage |
+| - | ------- | ------------------ |
+| 1 | Solutions | High |
+| 2 | Electrochemistry | High |
+| 3 | Chemical Kinetics | High |
+| 4 | The d- and f-Block Elements | Very high |
+| 5 | Coordination Compounds | Very high |
+| 6 | Haloalkanes and Haloarenes | Medium |
+| 7 | Alcohols, Phenols and Ethers | High |
+| 8 | Aldehydes, Ketones and Carboxylic Acids | High |
+| 9 | Amines | High |
+| 10 | Biomolecules | High |
+
+### Extra JEE Main Topics
+
+| # | Chapter | JEE Main weightage |
+| - | ------- | ------------------ |
+| 1 | p-Block Elements (Groups 13–18) | Medium |
+| 2 | Principles Related to Practical Chemistry | Medium |
+| 3 | Named Reactions at a Glance | Quick revision |
+
+### Revision Sections
+
+| # | Section | Type |
+| - | ------- | ---- |
+| 1 | Reactions | Quick revision |
+| 2 | Inorganic Chemistry: Group-wise Trends | Quick revision |
 
 ## 🗂️ Project Structure
 
 ```
-Throne-of-Ranks/
+JEE-Chemistry-Short-Notes/
 ├── index.html    # App shell
 ├── css/          # Stylesheets
-├── js/           # Journey, ranks, quests, streak and countdown logic
-├── assets/       # Images and other media
-├── vendor/       # Third-party libraries
-├── css2          # Font stylesheet
-├── download      # (see note below)
+├── js/           # App logic (routing, rendering, revision tracker)
+├── data/         # Chapter notes content
+├── img/          # Logo and images
 └── README.md
 ```
 
@@ -60,8 +81,8 @@ Throne-of-Ranks/
 No build tools needed. Clone the repo and serve the folder with any static server:
 
 ```bash
-git clone https://github.com/AarushOberoi/Throne-of-Ranks.git
-cd Throne-of-Ranks
+git clone https://github.com/AarushOberoi/JEE-Chemistry-Short-Notes.git
+cd JEE-Chemistry-Short-Notes
 
 # Option 1: Python
 python -m http.server 8000
@@ -71,10 +92,6 @@ npx serve .
 ```
 
 Then open `http://localhost:8000`.
-
-## ⚙️ Make It Your Own
-
-The journey is built around one exam date and a fixed start date. To adapt it for a different exam or schedule, update the exam date, start date and daily quests in the scripts under `js/`, then redeploy.
 
 ## ☁️ Deployment
 
@@ -89,13 +106,23 @@ npx wrangler deploy
 - HTML / CSS / JavaScript
 - Cloudflare Workers (hosting)
 
+## 🔗 Related
+
+- [JEE Physics Short Notes](https://jeephysicsshortnotes.aarushoberoi.workers.dev)
+- [JEE Maths Short Notes](https://jeemathsshortnotes.aarushoberoi.workers.dev)
+- [JEE Formula Sheet](https://jee-formula-sheet.aarushoberoi.workers.dev)
+
 ## 🤝 Contributing
 
-Ideas, bug reports and pull requests are welcome:
+Found a typo or a wrong reaction? Contributions are welcome:
 
 1. Fork the repository
-2. Create a branch: `git checkout -b feature/your-feature`
+2. Create a branch: `git checkout -b fix/chapter-name`
 3. Commit your changes and open a pull request
+
+## ⚠️ Disclaimer
+
+These are unofficial study notes. Chapter weightage labels are indicative, based on JEE Main trends. Always cross-check with your textbooks and the official NTA syllabus.
 
 ## 👤 Author
 
